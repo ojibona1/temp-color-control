@@ -1,0 +1,18 @@
+.goBack{
+    flex-shrink: 1;
+    padding: 10px;
+    height: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+
+.goForward{
+    flex-shrink: 2;
+    padding: 10px;
+    height: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: 20px;
+}

@@ -1,13 +1,23 @@
 .App {
+  position: relative;
   text-align: center;
+  background-image: linear-gradient(45deg, rgb(234, 17, 17), yellow, pink, purple, rgb(4, 99, 242), rgb(31, 232, 31), cyan);
+  background-size: 500%;
+  animation: sleek 20s linear infinite;
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 
 .App-header {
-  background-color: white;
-  min-height: 100vh;
+  position: relative;
+  max-height: 90vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -18,4 +28,36 @@
   color: #61dafb;
 }
 
+@keyframes sleek {
+  0%{
+    background-position: left;
+  }
+  50%{
+    background-position: right;
+  }
+  100%{
+    background-position: left;
+  }
+}
 
+
+@media screen and (max-width: 150px) {
+  .App {
+    min-height: 400vh;
+    max-width: 100vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .App {
+
+    min-height: 400vh;
+    max-width: 100vh;
+    justify-content: flex-start;
+  }
+  .App-header{
+    margin-top: 30px;
+  }
+}

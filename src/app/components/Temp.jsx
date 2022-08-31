@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './temp.css';
+import './assets/temp.css';
 
 
 const Temp =()=> {

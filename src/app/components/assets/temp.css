@@ -5,11 +5,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    height: 450px;
-    flex-shrink: 1;
+    align-items: center;
+    min-width: 200px;
+    text-align: center;
+    min-height: 50vh;
     background: #282c34;
-    min-width: 300px;
     border-radius: 18px;
     padding: 20px 30px;
 }
@@ -18,11 +18,13 @@
     height: 250px;
     display: flex;
     justify-content: center;
+    flex-shrink: 2;
     align-items: center;
-    left: 65px;
+    padding: 30px;
     width: 250px;
     border-radius: 50%;
     transition: background-color .5s;
+    animation: readerAnimate 5s ease-in-out infinite alternate;
 }
 
 .temp-number{
@@ -52,3 +54,12 @@
     background-color: lightgray;
 }
 
+@keyframes readerAnimate {
+    0%{
+        transform: scale(0.75);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

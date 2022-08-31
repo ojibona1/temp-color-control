@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.card{
+    min-width: 400px;
+    min-height: 80vh;
+    background: #28342b;
+    border-radius: 18px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.myForm{
+   margin-top: 80px;
+}
+
+.myForm input{
+    width: 240px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.27rem;
+    transition: .3s;
+}
+.myForm input:focus{
+    outline: none;
+}
+
+.myForm button[type='submit']{
+    margin-top: 70px;
+    padding: 10px;
+    border-radius: 10px;
+}
